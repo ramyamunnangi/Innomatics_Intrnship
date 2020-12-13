@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<title>Ramya</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body  class="w3-light-blue w3:content" style="max-width:1600px" id="myPage">
+<style>
+img{
+  border-radius:50%;
+}
+</style>
+<!-- Sidebar on click -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
+    <i class="fa fa-remove"></i>
+  </a>
+  <a href="#" class="w3-bar-item w3-button">Profile</a>
+  <a href="#" class="w3-bar-item w3-button">Info</a>
+  <a href="#" class="w3-bar-item w3-button">Education</a>
+  <a href="#" class="w3-bar-item w3-button">Personal Details</a>
+  <a href="#" class="w3-bar-item w3-button">Contact</a>
+</nav>
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-th w3-margin-right"></i>Profile</a>
+  <a href="#info" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Info</a>
+  <a href="#education" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Education</a>
+  <a href="#personal details" class="w3-bar-item w3-button w3-hide-small w3-hover-white"><i class="fa fa-user"></i>Personal Details</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white"><i class="fa fa-envelope"></i>Contact</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">More <i class="fa fa-caret-down"></i></button>
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="#" class="w3-bar-item w3-button">Authentication/Certification</a>
+      <a href="#" class="w3-bar-item w3-button">Personal Skills</a>
+    </div>
+  </div>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
+ </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="#info" class="w3-bar-item w3-button">Info</a>
+    <a href="#education" class="w3-bar-item w3-button">Education</a>
+    <a href="#personal details" class="w3-bar-item w3-button">Personal Details</a>
+    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    <a href="#" class="w3-bar-item w3-button">Search</a>
+  </div>
+</div>
+<!-- Team Container -->
+<div class="w3-container w3-padding-64 " id="info">
+
+<h2 class="w3-center w3-xxlarge">MY PORTFOLIO</h2>
+<h1  class=" w3-xxxlarge w3-text-black "><b>Ramya Munnangi</b></h1>
+<img src="{{url_for('static', filename='pic.jpg')}}" class="rounded float-left" width="250"  height= "300",media="screen"><br><br><br>
+<div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Career Objective :</span></div>
+<h4><ul><li>Data science intern at Innomatice Resreachlabs and i have done mastres in Statistics at Sri Venkateshwara University.Strong problem solving and Analytical Skills and i am seeking a challenging career in Data Science</li></ul></h4><br><br>
+
+<!-- Work Row -->
+<div class="w3-padding w3-padding-64 " id="education">
+<div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">EDUCATION DETAILS:</span></div>
+<table class="table table-striped table-dark">
+  <thead>
+  <style>
+       table , th,td{
+           border: 1px solid black;
+           border-collapse: collapse;
+       }
+
+       th ,td {
+           padding: 20px;
+       }
+
+       th {
+           text-align:left;
+           }
+    </style>
+    <tr>
+      <th scope="col">course</th>
+      <th scope="col">Institution</th>
+      <th scope="col">Board/University</th>
+      <th scope="col">Year of passing</th>
+      <th scope="col">Score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">M.Sc.(Statistics)</th>
+      <td><b>Sri Venkateshwara University,Tirupathi</b></td>
+      <td><b>Sri Venkateshwara University</b></td>
+      <td><b>2020</b></td>
+      <td><b>72%</b></td>
+    </tr>
+    <tr>
+      <th scope="row">B.Sc(Computer Sciences)</th>
+      <td><b>Sri Durga malleswara Siddartha mahila kalasala,Vijayawada</b></td>
+      <td><b>Krishna University</b></td>
+      <td><b>2018</b></td>
+      <td><b>86%</b></td>
+    </tr>
+    <tr>
+      <th scope="row">Intermediate</th>
+      <td><b>Sri Srinivasa junior College,Vuyyuru</b></td>
+      <td><b>Board Of Secondary Education</b></td>
+      <td><b>2015</b></td>
+      <td><b>76%</b></td>
+    </tr>
+    <tr>
+      <th scope="row">SSC</th>
+      <td><b>Z.P.H School,Pedaogirala</b></td>
+      <td><b>Board Of Secondary Education</b></td>
+      <td><b>2013</b></td>
+      <td><b>90%</b></td>
+    </tr>
+  </tbody>
+  </table><br>
+<div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Technical Skills :</span></div>
+<h4><ul><li>Languages: C ,Python,SQL.</li></ul></h4><br>
+<h4><ul><li>Softwares: HTML,Photoshop.</li></ul></h4>
+
+
+<!-- Pricing Row -->
+<div class="w3-padding w3-padding-64" id="personal details">
+<div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">PERSONAL DETAILS :</span></div>
+<p><ul><li>NAME : M.Ramya</li></ul></p>
+<p><ul><li>D.O.B : 14/10/1998</li></ul></p>
+<p><ul><li>GENDER : Female</li></ul></p>
+<p><ul><li>NATIONALITY : India</li></ul></p>
+<p><ul><li>ADDRESS : door no :3-36 , main road,pedaogirala ,vuyyuru mandal,krishna disrtict , Andhrapradesh ,pin:521245.</li><ul></p><br>
+<h3 style="text-align:left">DECLARATION : </h3><br>
+<p><ul><li> I hereby declare that the information furnished above is true to the best of my knowledge.</li></ul><br><br>
+<p>DATE :</P><br>
+<p>PLACE :</p>
+</div>
+<!-- Contact Container -->
+<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+  <div class="w3-row">
+    <div class="w3-col m5">
+    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact : </span></div>
+      <h3>Address</h3>
+      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>Kukatpally,Hyderabad,Telangana.</p>
+      <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i> +91 9963191679</p>
+      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  ramyamunnangi11@gmail.com</p>
+      <p><i class="fa fa-linkedin w3-text-teal w3-xlarge"></i>  RamyaReddy Munnangi</p>
+    </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+         <form action="/action_page.php" target="_blank">
+           <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+             <div class="w3-half">
+               <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+             </div>
+             <div class="w3-half">
+               <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+             </div>
+           </div>
+           <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+           <button class="w3-button w3-black w3-right w3-section" type="submit">
+             <i class="fa fa-paper-plane"></i> SEND MESSAGE
+           </button>
+         </form>
+       </div>
+     </div>
+   </div>
+
+<script>
+// Script for side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "300px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
